@@ -52,7 +52,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/Untitled.jpeg)no-repeat;
+    background: url(images/Untitled.jpeg)no-repeat center center/cover;
     background-size:cover;
     background-position: center;
     background-attachment: fixed;
@@ -304,3 +304,31 @@ section {
      
     }
 }
+
+// for mobile
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    section {
+        padding: 100px 20px;
+    }
+
+    .main h2 span {
+        font-size: 2.2em;
+    }
+
+    .main h3 {
+        font-size: 1.5em;
+    }
+
+    .card {
+        width: 90%;
+        margin: 15px auto;
+    }
+
+    .project-card {
+        width: 90%;
+    }
+} 
